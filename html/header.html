@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Enter question</title>
+<script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+  <script>
+  tinymce.init({
+    selector: '#body'
+  });
+  </script>
+</head>
+
+<body>
+<h2>Please enter your question</h2>
+<form id="myQuestion" name="myQuestion" action="/p6/tag_reco" method="post"  target="_blank">
+
+Title: <input type="text" name="title" id="title" size="180" ><br/><br/>
+Question: <br/><textarea name="body" id="body" cols="100" rows="10" ></textarea>
+<input type="submit" name="submit" id="submit" value="Send">
+</form>
+
+	  
