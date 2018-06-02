@@ -62,6 +62,8 @@ def predict_tags(title=None, body=None):
     proposed_tags = ''
     for i in new_predict_proba[0].argsort()[:-10-1:-1]:
         proposed_tag = tag_df.iloc[i]['names']
+        if new_predict_proba[0][i] > 0.5:
+            proposed_tag = "<b>" + proposed_tag + "</b>"
         proposed_tags += proposed_tag + "<br/>"
         
     return proposed_tags
