@@ -16,3 +16,5 @@ All the development has been done in notebooks, which obvioulsy are in the Noteb
 - <b>Text Data-Supervised</b> is the final model based on SVM. This creates the pickle dumps used in the test website.
 
 The website code is TagsReco.py in the python_scripts folder. It was initially developped as a notebook.
+
+The result of my work can be tested at http://muths.pythonanywhere.com/
